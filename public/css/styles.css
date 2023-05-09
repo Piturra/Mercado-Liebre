@@ -1,0 +1,445 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+/*      header        */
+
+header {
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.banner img {
+    width: 20vw;
+}
+
+.searchbar {
+    padding: 10px;
+    align-items: center;
+    justify-items: right;
+    flex-wrap: nowrap;
+}
+
+.compra {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.burger-menu {
+    text-align: center;
+}
+
+.burger-menu i {
+    padding: 10px;
+    color: white;
+    background-color: #1259c3;
+    border-radius: 10%;
+}
+
+/*      main        */
+
+main {
+    width: 90vw;
+    padding-bottom: 30px;
+    border-bottom: 10px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.imagen-banner {
+    width: 100vw;
+}
+
+section {
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+section h2.title {
+    display: flex;
+    align-self: flex-start;
+}
+
+.title {
+    margin: 10px;
+    color: #666;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.producto {
+    width: 90vw;
+    margin: 10px;
+    border-top: 1px solid #ebebeb;
+    display: inline-block;
+}
+
+.producto img {
+    width: 90vw;
+}
+
+.producto div {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.producto div i {
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.producto div i:hover {
+    transform: rotate(270deg)
+}
+
+.producto div div {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price {
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    flex-grow: 0.3;
+}
+
+.discount {
+    margin: 5px;
+    color: #39b54a;
+    font-size: 16px;
+    flex-grow: 0.7;
+}
+
+.description {
+    margin: 5px;
+    font-size: 16px;
+    display: none;
+}
+
+/*      footer        */
+
+footer {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.copyright {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+footer section p.title {
+    margin: 0px;
+}
+
+footer section i {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #1259c3;
+    font-size: 2em;
+}
+
+/*      formulario registro        */
+
+.register {
+    width: 100vw;
+    padding: 20px;
+}
+
+.control-form {
+    margin-bottom: 15px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.control-form label {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    display: block;
+}
+
+.control {
+    width: 100%;
+    padding: 8px;
+    border: none;
+}
+
+.perfil {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.intereses {
+    margin: 10px;
+}
+
+.boton-formulario {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton-formulario button {
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*      login        */
+
+.login {
+    padding: 20px 15px;
+    width: 100vw;
+    text-align: center;
+}
+
+.login .control {
+    padding: 8px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.login div button {
+    color: white;
+    background-color: #1259c3;
+}
+
+/*      visual table       */
+
+@media (min-width: 768px) {
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .banner img {
+        width: 20vw;
+    }
+
+    .searchbar {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .searchbar input {
+        width: 30vw;
+    }
+
+    .compra {
+        text-align: right;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 5px;
+    }
+
+    .productos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: inline-block;
+        width: 47vw;
+        justify-content: space-between;
+    }
+
+    .producto img {
+        width: 47vw;
+    }
+
+    .description {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .control-form {
+        max-width: 425px;
+    }
+
+    .boton-formulario {
+        max-width: 425px;
+    }
+
+    .login .control {
+        width: 70vw;
+        max-width: 1024px;
+    }
+
+    footer {
+        padding-top: 75px;
+    }
+}
+
+/*      visual desktop       */
+
+@media (min-width: 1024px) {
+
+/*      header       */
+
+    .searchbar {
+        margin-left: 7, 5vw;
+    }
+
+    .menu {
+        justify-content: space-between;
+    }
+
+    .menu ul li {
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+/*      main      */
+
+    section h2.title {
+        display: flex;
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+
+    .productos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .producto {
+        display: inline-block;
+        width: 20vw;
+        box-shadow: none;
+    }
+
+    .producto img {
+        width: 20vw;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .producto:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .producto:hover .description {
+        display: flex;
+    }
+
+/*      form      */
+
+    .boton-formulario button:hover {
+        background-color: #0022AA;
+    }
+
+/*      login      */
+
+    .login div button:hover {
+        background-color: #0022AA;
+    }
+
+/*      footer      */
+
+    .main-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .main-footer section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 33vw;
+    }
+
+    .main-footer section:hover i {
+        color: #c2ccf3;
+    }
+}
