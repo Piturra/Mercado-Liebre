@@ -261,11 +261,12 @@ footer section i {
 
 .login .texto {
     padding: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     border: none;
 }
 
 .login div button {
+    width: 20vw;
     color: white;
     font-size: 20px;
     padding: 5px;
