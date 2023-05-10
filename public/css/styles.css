@@ -240,13 +240,13 @@ footer section i {
     margin: 10px;
 }
 
-.boton-formulario {
+.boton-cierre {
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
 }
 
-.boton-formulario button {
+.boton-cierre button {
     font-size: 20px;
     padding: 5px;
 }
@@ -416,7 +416,7 @@ footer section i {
 /*      form      */
 
     .boton-cierre button:hover {
-        background-color: #0022AA;
+        background-color: #1259c3;
     }
 
 /*      login      */
