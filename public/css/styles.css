@@ -16,45 +16,48 @@ header {
     padding: 10px;
 }
 
-.header {
+.headerTop {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.header div {
+.headerTop div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.header img {
-    width: 20vw;
+.headerTop a {
+    display: flex;
+}
+
+.headerTop img {
+    width: 45vw;
 }
 
 .searchbar {
-    padding: 10px;
     background-color: white;
-    align-items: center;
-    justify-items: right;
     flex-wrap: nowrap;
-    text-align: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .searchbar input {
+    width: 35vw;
+    padding-left: 10px;
+    outline: 0;
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    align-items: center;
+    border-radius: 5px;
 }
 
 .searchbar button {
-    border: none;
     padding: 10px;
     background-color: white;
+    border: none;
+    border-radius: 10px;
 }
-
 
 .compra {
     margin-top: 10px;
@@ -62,6 +65,11 @@ header {
     font-weight: bold;
     display: flex;
     justify-content: center;
+}
+
+.compra i{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .menu {
@@ -134,6 +142,7 @@ section h2.title {
 
 .producto img {
     width: 90vw;
+    box-sizing: border-box;
 }
 
 .producto div {
@@ -389,7 +398,7 @@ footer section i {
 
 @media (min-width: 1024px) {
 
-/*      header       */
+    /*      header       */
 
     .searchbar {
         margin-left: 7, 5vw;
@@ -405,7 +414,7 @@ footer section i {
         margin-right: 15px;
     }
 
-/*      main      */
+    /*      main      */
 
     section h2.title {
         display: flex;
@@ -442,19 +451,19 @@ footer section i {
         display: flex;
     }
 
-/*      form      */
+    /*      form      */
 
     .boton-cierre button:hover {
         background-color: #1259c3;
     }
 
-/*      login      */
+    /*      login      */
 
     .login div button:hover {
         background-color: #0022AA;
     }
 
-/*      footer      */
+    /*      footer      */
 
     .main-footer {
         display: flex;
