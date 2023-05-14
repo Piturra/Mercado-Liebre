@@ -375,13 +375,13 @@ footer section i {
     }
 
     .form .control {
-        width: 70vw;
+        width: 35vw;
         max-width: 768px;
     }
 
     .control-form {
         max-width: 425px;
-    }
+    }  
 
     .boton-formulario {
         width: 70vw;
