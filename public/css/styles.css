@@ -67,7 +67,7 @@ header {
     justify-content: center;
 }
 
-.compra i{
+.compra i {
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -142,11 +142,10 @@ section h2.title {
 
 .producto img {
     width: 90vw;
-    box-sizing: border-box;
 }
 
 .producto div {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 10px;
     background-color: white;
     position: relative;
@@ -181,7 +180,6 @@ section h2.title {
 
 .producto div div {
     padding: 0px;
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
@@ -314,13 +312,13 @@ footer section i {
 
     .header {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
         flex-direction: row;
     }
 
-    .header img {
+    .headerTop img {
         width: 20vw;
     }
 
@@ -376,17 +374,27 @@ footer section i {
         display: none;
     }
 
+    .form .control {
+        width: 70vw;
+        max-width: 768px;
+    }
+
     .control-form {
         max-width: 425px;
     }
 
     .boton-formulario {
-        max-width: 425px;
+        width: 70vw;
+        max-width: 768px;
+    }
+
+    .boton-formulario button {
+        width: 10vw;
     }
 
     .login .control {
         width: 70vw;
-        max-width: 1024px;
+        max-width: 768px;
     }
 
     footer {
@@ -398,10 +406,17 @@ footer section i {
 
 @media (min-width: 1024px) {
 
+    .banner img {
+        width: 10vw;
+        align-self: center;
+    }
+
     /*      header       */
 
     .searchbar {
-        margin-left: 7, 5vw;
+        width: 40vw;
+        margin-left: 8vw;
+        margin-right: 8vw;
     }
 
     .menu {
@@ -449,6 +464,14 @@ footer section i {
 
     .producto:hover .description {
         display: flex;
+    }
+
+    .producto div i {
+        transition: 450ms;
+    }
+
+    .producto:hover div i {
+        transform: rotate(-90deg);
     }
 
     /*      form      */
